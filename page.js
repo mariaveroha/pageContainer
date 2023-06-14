@@ -33,12 +33,12 @@ cards.forEach(function (item) {
 
 $('.slider1').slick({
     arrows: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     initialSlide: 0,
     appendArrows: $('.arrows'),
     responsive: [
         {
-            breakpoint: 1000,
+            breakpoint: 1250,
             settings: {
                 slidesToShow: 3,
             }
@@ -56,13 +56,13 @@ $('.slider1').slick({
 
 $(document).ready(function () {
     $('.slider').slick({
-        slidesToShow: 4,
+        slidesToShow: 3,
         arrows: true,
         initialSlide: 0,
         appendArrows: $('.arrowsservices'),
         responsive: [
             {
-                breakpoint: 1000,
+                breakpoint: 1250,
                 settings: {
                     slidesToShow: 3,
                 }
@@ -77,13 +77,13 @@ $(document).ready(function () {
     });
 
     $('.slider3').slick({
-        slidesToShow: 4,
+        slidesToShow: 3,
         initialSlide: 0,
         appendArrows: $('.arrowsBlog'),
         arrows: true,
         responsive: [
             {
-                breakpoint: 1000,
+                breakpoint: 1250,
                 settings: {
                     slidesToShow: 3,
                 }

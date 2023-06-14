@@ -20,6 +20,8 @@ header {
     justify-content: space-between;
     padding: 20px;
     height: 10vh;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .nav {
@@ -77,11 +79,13 @@ header {
     display: flex;
     height: 85vh;
     box-sizing: border-box;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .left {
-    background-color: #6FC3FF;
     padding-left: 160px;
+    background-color: #6FC3FF;
 }
 
 .title {
@@ -144,7 +148,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 0 auto;
 
 }
 
@@ -156,6 +160,11 @@ header {
 
 
 /* cases */
+.containerCases {
+    max-width: 1200px;
+    margin: auto;
+}
+
 .cases {
     display: flex;
     justify-content: center;
@@ -185,8 +194,8 @@ header {
 }
 
 .img-case {
-    width: 20vw;
-    height: 24vw;
+    width: 300px;
+    height: 320px;
     cursor: pointer;
 }
 
@@ -200,18 +209,22 @@ header {
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.54);
     cursor: pointer;
+    width: 300px;
 }
 
 /* services */
+.servicesContainer {
+    background-color: #6FC3FF;
+}
 
 .button-service {
     margin: 64px 0 167px 183px;
 }
 
 .services {
-    background-color: #6FC3FF;
     padding-bottom: 259px;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 .list {
@@ -224,7 +237,7 @@ header {
 .card {
     background: #FFFFFF;
     box-shadow: 16.0568px 16.0568px 12.3514px -2.47027px rgba(0, 0, 0, 0.25);
-    width: 20vw;
+    width: 300px;
     cursor: pointer;
     margin-bottom: 20px;
 }
@@ -304,6 +317,8 @@ header {
 
 .blog {
     padding: 147px 0 236px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .button-blog {
@@ -312,7 +327,7 @@ header {
 }
 
 .card-blog {
-    width: 20vw;
+    width: 300px;
     background-color: #FFFFFF;
     box-shadow: 15.4532px 15.4532px 11.8871px -2.37742px rgba(0, 0, 0, 0.25);
     position: relative;
@@ -385,13 +400,17 @@ header {
 
 
 /* footer */
+.containerFooter {
+    background-color: #6FC3FF;
+}
 
 footer {
-    background-color: #6FC3FF;
     padding: 100px 0 168px 0;
     display: flex;
     justify-content: center;
     column-gap: 145px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .block-footer {
@@ -544,10 +563,11 @@ input {
     transition: all 0.5s ease 0s;
 }
 
-.modal.open  {
+.modal.open {
     opacity: 1;
     visibility: visible;
 }
+
 .modal-content {
     background-color: #fefefe;
     margin: 5% auto;
@@ -666,6 +686,38 @@ input {
         max-width: 480px;
     }
 
+    .services,
+    footer,
+    .blog,
+    .containerCases,
+    header,
+    .banner {
+        max-width: 800px;
+    }
+
+    .card,
+    .card-blog {
+        width: 230px;
+    }
+
+    .block-button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .button-service,
+    .button-case,
+    .button-blog {
+        margin-left: 0;
+    }
+
+    .img-case {
+        width: 230px;
+        height: 280px;
+    }
+    .case-name {
+        width: 230px;
+    }
 }
 
 @media (max-width: 1150px) {
@@ -682,9 +734,6 @@ input {
         column-gap: 10px;
     }
 
-}
-
-@media (max-width: 1076px) {
     .name-blog {
         font-size: 30px;
     }
@@ -706,6 +755,7 @@ input {
     footer {
         justify-content: space-between;
     }
+
 }
 
 @media (max-width: 1000px) {
@@ -719,17 +769,6 @@ input {
 
     .nav {
         font-size: 34px;
-    }
-
-    .block-button {
-        display: flex;
-        justify-content: center;
-    }
-
-    .button-service,
-    .button-case,
-    .button-blog {
-        margin-left: 0;
     }
 
     .card,
@@ -748,7 +787,9 @@ input {
         width: 30vw;
         height: 35vw;
     }
-
+.case-name {
+    width: 30vw;
+}
 }
 
 @media (max-width: 880px) {
@@ -784,6 +825,9 @@ input {
     .img-case {
         width: 45vw;
         height: 55vw;
+    }
+    .case-name {
+        width: 45vw;
     }
 }
 
@@ -1004,6 +1048,7 @@ input {
 
     .case-name {
         margin-bottom: 30px;
+        width:  140.76px ;
     }
 
     .button-service {
